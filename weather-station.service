@@ -1,0 +1,13 @@
+[Unit]
+Description=Weather Station
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/timo/Documents/weather-station
+ExecStart=/home/pi/.local/bin/uv run src/main.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

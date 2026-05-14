@@ -1,0 +1,2 @@
+rsync -av --exclude '.venv' --exclude '__pycache__' --exclude '*.db' --exclude '.git' . pi@pi:/home/pi/Documents/weather-station
+# scp pi@pi:~/Documents/weather-station/src/database/weather-station.db /home/timo/Dev/weather-station/src/database/weather-station.db
